@@ -71,7 +71,7 @@
                             background: linear-gradient(90deg, rgba(255, 0, 0, 0.301), black);
                         }
                         
-                        @media (min-width:1130px) {
+                        @media screen and (min-width:1130px) {
                             .name {
                                 font-size: 3em;
                                 padding-top: 2em;
@@ -183,6 +183,8 @@
                         .footer {
                             font-weight: 700;
                             font-size: 16px;
+                            margin-left: 1em;
+                            margin-right: 1em;
                         }
                         
                         .terms a {
@@ -192,7 +194,7 @@
                         }
                         /*------------------*/
                         
-                        @media (min-width:1130px) {
+                        @media screen and (min-width:1130px) {
                             .return img {
                                 width: 2em;
                             }
@@ -223,7 +225,7 @@
                         /*Terms page (mentions) and all course (eveil - violon - piano - orchestre)*/
                         
                         .main-frame {
-                            height: 50em;
+                            height: 38em;
                         }
                         
                         .footer-frame {
@@ -298,13 +300,16 @@
                             rotate: -8deg;
                         }
                         
-                        .price-eveil,
-                        .price-violon {
+                        .price-eveil {
                             margin-top: 29em;
                         }
                         
+                        .price-violon {
+                            margin-top: 26em;
+                        }
+                        
                         .price-piano {
-                            margin-top: 28em;
+                            margin-top: 27em;
                         }
                         
                         .price-orchestre {
@@ -316,21 +321,23 @@
                             text-align: justify;
                         }
                         
-                        @media (min-width:342px) {
+                        @media screen and (min-width:342px) {
                             .price-orchestre {
-                                margin-top: 30em;
+                                margin-top: 27em;
                             }
                         }
                         
-                        @media (min-width: 360px) {
+                        @media screen and (min-width: 360px) {
                             .price-orchestre {
                                 margin-top: 28em;
                             }
                         }
                         
-                        @media (min-width:400px) {
+                        @media screen and (min-width:400px) {
                             .price-eveil,
-                            .price-violon,
+                            .price-violon {
+                                margin-top: 26em;
+                            }
                             .price-piano {
                                 margin-top: 24em;
                             }
@@ -339,13 +346,13 @@
                             }
                         }
                         
-                        @media (min-width: 450px) {
+                        @media screen and (min-width: 450px) {
                             .price-orchestre {
                                 margin-top: 25em;
                             }
                         }
                         
-                        @media (min-width:610px) {
+                        @media screen and (min-width:610px) {
                             .price-eveil,
                             .price-violon,
                             .price-piano,
@@ -354,7 +361,13 @@
                             }
                         }
                         
-                        @media (min-width: 1130px) {
+                        @media screen and (min-width: 1130px) {
+                            .main-frame {
+                                height: 50em;
+                            }
+                            .footer-frame {
+                                height: 2em;
+                            }
                             .frame {
                                 height: 26em;
                             }
@@ -374,7 +387,7 @@
                                 margin-bottom: 0;
                             }
                             .price-eveil {
-                                margin-top: 17em;
+                                margin-top: 18em;
                             }
                             .price-violon,
                             .price-piano {
@@ -452,7 +465,7 @@
                             padding-right: 1em;
                         }
                         
-                        @media (min-width:1130px) {
+                        @media screen and (min-width:1130px) {
                             .blog {
                                 padding-top: 1.5em;
                                 padding-bottom: 1.5em;
@@ -533,13 +546,15 @@
                         
                         .main-frame-prices {
                             height: 98%;
+                            margin-left: 1em;
+                            margin-right: 1em;
                         }
                         
                         .footer-frame-prices {
                             height: 2%;
                         }
                         
-                        @media (min-width: 1130px) {
+                        @media screen and (min-width: 1130px) {
                             .list-prices h1 {
                                 font-size: 2em;
                             }
