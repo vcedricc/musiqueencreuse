@@ -226,7 +226,6 @@ body {
         margin: 0;
     }
     .course:hover {
-        cursor: pointer;
         transform: scale(1.08);
     }
     .footer {
@@ -405,7 +404,6 @@ body {
         margin-bottom: 0;
     }
     .price:hover {
-        cursor: pointer;
         transform: scale(1.08);
     }
     .price-eveil {
