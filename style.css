@@ -1,586 +1,602 @@
-                        /*Index page*/
-                        
-                        * {
-                            margin: 0;
-                            padding: 0;
-                        }
-                        
-                        .cover {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                        }
-                        
-                        .name {
-                            position: absolute;
-                            color: white;
-                            font-family: 'Dancing Script', cursive;
-                            font-size: 32px;
-                            align-self: flex-start;
-                            text-align: center;
-                            line-height: 1em;
-                            padding-top: 1em;
-                            padding-left: 0.25em;
-                            rotate: 320deg;
-                        }
-                        /*futur lien présentation professeur*/
-                        
-                        .name strong {
-                            text-decoration: none;
-                            font-style: normal;
-                            font-weight: 400;
-                        }
-                        /*------------------------*/
-                        
-                        .background-video {
-                            display: flex;
-                            height: 100vh;
-                            width: 100vw;
-                            object-fit: cover;
-                            z-index: -1;
-                        }
-                        
-                        .content,
-                        .content button {
-                            font-family: 'Cinzel', serif;
-                            text-transform: uppercase;
-                            font-weight: 700;
-                            color: white;
-                        }
-                        
-                        .content {
-                            position: absolute;
-                            color: white;
-                            font-size: 16px;
-                            z-index: 1;
-                            text-align: center;
-                            width: 100%;
-                            margin-top: 2em;
-                        }
-                        
-                        .content button {
-                            min-height: 2.5em;
-                            width: 300px;
-                            border-radius: 100px;
-                            font-size: 16px;
-                            background: rgba(255, 255, 255, 0.301);
-                            margin-top: 1em;
-                        }
-                        
-                        .content button:hover {
-                            background: linear-gradient(90deg, rgba(255, 0, 0, 0.301), black);
-                        }
-                        
-                        @media screen and (min-width:1130px) {
-                            .name {
-                                font-size: 3em;
-                                padding-top: 2em;
-                                padding-left: 0.5em;
-                            }
-                            .content {
-                                margin-top: 0;
-                                font-size: 2em;
-                            }
-                            .content button {
-                                height: 50px;
-                                width: 500px;
-                                font-size: 0.5em;
-                                margin-top: 0;
-                            }
-                        }
-                        /*Course page (cours)*/
-                        
-                        body {
-                            font-family: 'Cinzel', serif;
-                        }
-                        
-                        .main-course {
-                            min-height: 55em;
-                        }
-                        
-                        .footer-course {
-                            min-height: 2em;
-                        }
-                        
-                        .cover-course {
-                            position: absolute;
-                        }
-                        
-                        .cover-course img {
-                            position: fixed;
-                            object-fit: cover;
-                            width: 100vw;
-                            height: 100vh;
-                            opacity: 0.2;
-                            z-index: 0;
-                        }
-                        
-                        .return {
-                            position: absolute;
-                            background-color: black;
-                            z-index: 3;
-                        }
-                        
-                        .return img {
-                            width: 30px;
-                        }
-                        
-                        .return:hover {
-                            background: linear-gradient(90deg, rgba(255, 0, 0, 0.301), black);
-                        }
-                        
-                        .nav-course {
-                            max-width: 90%;
-                            position: relative;
-                            z-index: 1;
-                            text-align: center;
-                            padding-left: 1.5em;
-                            padding-top: 2em;
-                            padding-bottom: 2em;
-                            font-size: 16px;
-                        }
-                        
-                        .nav-course img {
-                            max-width: 100%;
-                        }
-                        
-                        .course a {
-                            text-decoration: none;
-                            color: white;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                        }
-                        
-                        .course em {
-                            font-style: normal;
-                            text-transform: uppercase;
-                        }
-                        
-                        .course {
-                            background-color: black;
-                            border-radius: 10px;
-                            margin: 20px;
-                        }
-                        
-                        .course img {
-                            border-bottom-left-radius: 10px;
-                            border-bottom-right-radius: 10px;
-                        }
-                        
-                        .course:hover {
-                            background: linear-gradient(90deg, rgba(255, 0, 0, 0.301), black);
-                        }
-                        /*Footer and terms* all pages ends*/
-                        
-                        .footer,
-                        .terms {
-                            position: relative;
-                            z-index: 1;
-                            text-align: center;
-                        }
-                        
-                        .footer {
-                            font-weight: 700;
-                            font-size: 16px;
-                            margin-left: 1em;
-                            margin-right: 1em;
-                        }
-                        
-                        .terms a {
-                            text-decoration: none;
-                            color: black;
-                            font-size: 16px;
-                        }
-                        /*------------------*/
-                        
-                        @media screen and (min-width:1130px) {
-                            .return img {
-                                width: 2em;
-                            }
-                            .nav-course {
-                                display: flex;
-                                flex-direction: row;
-                                flex-wrap: wrap;
-                                justify-content: center;
-                                gap: 4em;
-                                font-size: 1.2em;
-                            }
-                            .nav-course img {
-                                max-width: 450px;
-                            }
-                            .cover-course img {
-                                object-position: 0px;
-                            }
-                            .course {
-                                margin: 0;
-                            }
-                            .course:hover {
-                                cursor: pointer;
-                                transform: scale(1.08);
-                            }
-                            .footer {
-                                font-size: 1em;
-                                margin-left: 0;
-                                margin-right: 0;
-                            }
-                            .terms a {
-                                font-size: 0.8em;
-                            }
-                        }
-                        /*Terms page (mentions) and all course (eveil - violon - piano - orchestre)*/
-                        
-                        .main-frame {
-                            height: 40em;
-                        }
-                        
-                        .footer-frame {
-                            height: 2em;
-                        }
-                        
-                        .frame-position {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            align-items: center;
-                            margin-left: 1em;
-                            margin-right: 1em;
-                            padding-top: 2em;
-                            padding-bottom: 2em;
-                        }
-                        
-                        .frame {
-                            position: relative;
-                            z-index: 2;
-                            text-align: center;
-                            max-width: 40em;
-                            min-height: 26em;
-                            background-color: rgba(255, 255, 255, 0.527);
-                            border-radius: 10px;
-                            padding: 2em;
-                            padding-bottom: 1em;
-                            margin-bottom: 2em;
-                        }
-                        
-                        .frame h1,
-                        .frame h2,
-                        .frame em,
-                        .frame p {
-                            margin-bottom: 0.75em;
-                        }
-                        
-                        .frame h1,
-                        .price {
-                            font-size: 22px;
-                            text-transform: uppercase;
-                        }
-                        
-                        .frame h2 {
-                            font-size: 20px;
-                        }
-                        
-                        .frame em,
-                        .frame p {
-                            font-size: 16px;
-                        }
-                        
-                        .frame em {
-                            font-style: normal;
-                            text-decoration: underline;
-                        }
-                        
-                        .price {
-                            position: absolute;
-                            z-index: 3;
-                            text-decoration: none;
-                            text-align: center;
-                            background: linear-gradient(90deg, black, rgba(255, 0, 0, 0.301));
-                            padding-left: 1em;
-                            padding-right: 1em;
-                            padding-top: 0.1em;
-                            padding-bottom: 0.1em;
-                            color: white;
-                            font-weight: 700;
-                            margin-bottom: 2em;
-                            border-radius: 21em;
-                            rotate: -8deg;
-                        }
-                        
-                        .price-eveil {
-                            margin-top: 29em;
-                        }
-                        
-                        .price-violon {
-                            margin-top: 26em;
-                        }
-                        
-                        .price-piano {
-                            margin-top: 27em;
-                        }
-                        
-                        .price-orchestre {
-                            margin-top: 32em;
-                        }
-                        
-                        .price i {
-                            font-size: 0.5em;
-                            text-align: justify;
-                        }
-                        
-                        @media screen and (min-width:342px) {
-                            .price-orchestre {
-                                margin-top: 27em;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 360px) {
-                            .price-orchestre {
-                                margin-top: 28em;
-                            }
-                        }
-                        
-                        @media screen and (min-width:400px) {
-                            .price-eveil,
-                            .price-violon {
-                                margin-top: 26em;
-                            }
-                            .price-piano {
-                                margin-top: 24em;
-                            }
-                            .price-orchestre {
-                                margin-top: 27em;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 450px) {
-                            .price-orchestre {
-                                margin-top: 25em;
-                            }
-                        }
-                        
-                        @media screen and (min-width:610px) {
-                            .price-eveil,
-                            .price-violon,
-                            .price-piano,
-                            .price-orchestre {
-                                margin-top: 19em;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1130px) {
-                            .main-frame {
-                                height: 50em;
-                            }
-                            .footer-frame {
-                                height: 2em;
-                            }
-                            .frame {
-                                height: 26em;
-                            }
-                            .frame h1,
-                            .price {
-                                font-size: 1.75em;
-                            }
-                            .frame h2 {
-                                font-size: 1.5em;
-                            }
-                            .frame em,
-                            .frame p {
-                                font-size: 1em;
-                            }
-                            .price {
-                                margin-top: 20em;
-                                margin-bottom: 0;
-                            }
-                            .price:hover {
-                                cursor: pointer;
-                                transform: scale(1.08);
-                            }
-                            .price-eveil {
-                                margin-top: 18em;
-                            }
-                            .price-violon,
-                            .price-piano {
-                                margin-top: 16em;
-                            }
-                            .price-orchestre {
-                                margin-top: 19em;
-                            }
-                        }
-                        /*Blog (events*/
-                        
-                        .blog {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            flex-wrap: wrap;
-                            padding-top: 2em;
-                            padding-bottom: 0.5em;
-                            text-align: center;
-                            gap: 0.20em;
-                        }
-                        
-                        .article {
-                            position: relative;
-                            width: 90%;
-                            background-color: rgba(255, 255, 255, 0.527);
-                            border-radius: 10px;
-                            padding: 2em;
-                            padding-bottom: 2em;
-                            gap: 3em;
-                            margin-left: 1em;
-                            margin-right: 1em;
-                        }
-                        
-                        .article h2 {
-                            font-size: 20px;
-                            margin-bottom: 1em;
-                        }
-                        
-                        .article h3 {
-                            font-size: 16px;
-                            margin-bottom: 1em;
-                        }
-                        
-                        .article img {
-                            max-width: 12em;
-                        }
-                        
-                        .title-events {
-                            font-size: 18px;
-                            width: 100%;
-                        }
-                        
-                        .events {
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            gap: 0.25em;
-                        }
-                        
-                        .newspapers {
-                            max-height: 2em;
-                        }
-                        
-                        .articles-newspapers a {
-                            text-decoration: none;
-                            color: black
-                        }
-                        
-                        .articles-newspapers a:hover {
-                            background: linear-gradient(90deg, grey, rgba(255, 0, 0, 0.301));
-                            border-radius: 16px;
-                            padding-left: 1em;
-                            padding-right: 1em;
-                        }
-                        
-                        @media screen and (min-width:1130px) {
-                            .blog {
-                                padding-top: 1.5em;
-                                padding-bottom: 1.5em;
-                                gap: 3em;
-                            }
-                            .article {
-                                width: 50em;
-                                margin-left: 0;
-                                margin-right: 0;
-                            }
-                            .article h2 {
-                                font-size: 1.5em;
-                            }
-                            .article h3 {
-                                font-size: 1.25em;
-                            }
-                            .article img {
-                                max-width: 100%;
-                            }
-                            .title-events {
-                                position: relative;
-                                font-size: 1.4em;
-                                background-color: rgba(255, 255, 255, 0.527);
-                                padding: 1em;
-                            }
-                            .events {
-                                gap: 3em;
-                                margin-bottom: 1.5em;
-                            }
-                        }
-                        /*Prices Page (tarifs)*/
-                        
-                        .list-prices h1 {
-                            padding-top: 0.5em;
-                            padding-bottom: 0.5em;
-                            text-align: center;
-                            font-size: 24px;
-                        }
-                        
-                        .list-prices h2 {
-                            font-size: 20px;
-                        }
-                        
-                        .list-prices {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            margin-bottom: 2.5em;
-                        }
-                        
-                        .table-prices {
-                            position: relative;
-                            text-align: center;
-                            line-height: 1.75em;
-                            border-collapse: collapse;
-                            width: 90%;
-                            margin: 1em;
-                            border: 3px solid rgba(255, 255, 255, 0.527);
-                            background-color: rgba(255, 255, 255, 0.527);
-                        }
-                        
-                        .title-table {
-                            text-decoration: underline;
-                        }
-                        
-                        .ligne-category {
-                            background: rgb(192, 173, 173, 0.527);
-                        }
-                        
-                        .ligne-table {
-                            background: rgb(223, 216, 205, 0.527);
-                        }
-                        
-                        .main-frame-prices h2 {
-                            margin-top: 1em;
-                            margin-bottom: 1em;
-                        }
-                        
-                        .main-frame-prices {
-                            height: 98%;
-                            margin-left: 1em;
-                            margin-right: 1em;
-                        }
-                        
-                        .footer-frame-prices {
-                            height: 2%;
-                        }
-                        
-                        @media screen and (min-width: 1130px) {
-                            .list-prices h1 {
-                                font-size: 2em;
-                            }
-                            .list-prices h2 {
-                                font-size: 1.5em;
-                            }
-                            .list-prices {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                            .table-prices {
-                                width: 40%;
-                            }
-                            .main-frame-prices {
-                                height: 52em;
-                            }
-                        }
+/*Index page*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name {
+    position: absolute;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    align-self: flex-start;
+    text-align: center;
+    line-height: 1em;
+    padding-top: 1em;
+    padding-left: 0.25em;
+    rotate: 320deg;
+}
+
+
+/*futur lien présentation professeur*/
+
+.name strong {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/*------------------------*/
+
+.background-video {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content,
+.content button {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.content button {
+    min-height: 2.5em;
+    width: 300px;
+    border-radius: 100px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.301);
+    margin-top: 1em;
+}
+
+.content button:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.301), black);
+}
+
+@media screen and (min-width:1130px) {
+    .name {
+        font-size: 3em;
+        padding-top: 2em;
+        padding-left: 0.5em;
+    }
+    .content {
+        margin-top: 0;
+        font-size: 2em;
+    }
+    .content button {
+        height: 50px;
+        width: 500px;
+        font-size: 0.5em;
+        margin-top: 0;
+    }
+}
+
+
+/*Course page (cours)*/
+
+body {
+    font-family: 'Cinzel', serif;
+}
+
+.main-course {
+    min-height: 55em;
+}
+
+.footer-course {
+    min-height: 2em;
+}
+
+.cover-course {
+    position: absolute;
+}
+
+.cover-course img {
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.return {
+    position: absolute;
+    background-color: black;
+    z-index: 3;
+}
+
+.return img {
+    width: 30px;
+}
+
+.return:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.301), black);
+}
+
+.nav-course {
+    max-width: 90%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 16px;
+}
+
+.nav-course img {
+    max-width: 100%;
+}
+
+.course a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course em {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.course {
+    background-color: black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.course img {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.course:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.301), black);
+}
+
+
+/*Footer and terms* all pages ends*/
+
+.footer,
+.terms {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.footer {
+    font-weight: 700;
+    font-size: 0.90em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.terms a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+
+/*------------------*/
+
+@media screen and (min-width:1130px) {
+    .return img {
+        width: 2em;
+    }
+    .nav-course {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4em;
+        font-size: 1.2em;
+    }
+    .nav-course img {
+        max-width: 450px;
+    }
+    .cover-course img {
+        object-position: 0px;
+    }
+    .course {
+        margin: 0;
+    }
+    .course:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+    }
+    .footer {
+        font-size: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .terms a {
+        font-size: 0.8em;
+    }
+}
+
+
+/*Terms page (mentions) and all course (eveil - violon - piano - orchestre)*/
+
+.main-frame {
+    height: 40em;
+}
+
+.footer-frame {
+    height: 2em;
+}
+
+.frame-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.frame {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 40em;
+    min-height: 26em;
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 10px;
+    padding: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.frame h1,
+.frame h2,
+.frame em,
+.frame p {
+    margin-bottom: 0.75em;
+}
+
+.frame h1,
+.price {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.frame h2 {
+    font-size: 20px;
+}
+
+.frame em,
+.frame p {
+    font-size: 16px;
+}
+
+.frame em {
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.price {
+    position: absolute;
+    z-index: 3;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(90deg, black, rgba(255, 0, 0, 0.301));
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2em;
+    border-radius: 21em;
+    rotate: -8deg;
+}
+
+.price-eveil {
+    margin-top: 29em;
+}
+
+.price-violon {
+    margin-top: 26em;
+}
+
+.price-piano {
+    margin-top: 27em;
+}
+
+.price-orchestre {
+    margin-top: 32em;
+}
+
+.price i {
+    font-size: 0.5em;
+    text-align: justify;
+}
+
+@media screen and (min-width:342px) {
+    .price-orchestre {
+        margin-top: 27em;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .price-orchestre {
+        margin-top: 28em;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .price-eveil,
+    .price-violon {
+        margin-top: 26em;
+    }
+    .price-piano {
+        margin-top: 24em;
+    }
+    .price-orchestre {
+        margin-top: 27em;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .price-orchestre {
+        margin-top: 25em;
+    }
+}
+
+@media screen and (min-width:610px) {
+    .price-eveil,
+    .price-violon,
+    .price-piano,
+    .price-orchestre {
+        margin-top: 19em;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .main-frame {
+        height: 50em;
+    }
+    .footer-frame {
+        height: 2em;
+    }
+    .frame {
+        height: 26em;
+    }
+    .frame h1,
+    .price {
+        font-size: 1.75em;
+    }
+    .frame h2 {
+        font-size: 1.5em;
+    }
+    .frame em,
+    .frame p {
+        font-size: 1em;
+    }
+    .price {
+        margin-top: 20em;
+        margin-bottom: 0;
+    }
+    .price:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+    }
+    .price-eveil {
+        margin-top: 18em;
+    }
+    .price-violon,
+    .price-piano {
+        margin-top: 16em;
+    }
+    .price-orchestre {
+        margin-top: 19em;
+    }
+}
+
+
+/*Blog (events*/
+
+.blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    gap: 0.20em;
+}
+
+.article {
+    position: relative;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 10px;
+    padding: 2em;
+    padding-bottom: 2em;
+    gap: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.article h2 {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.article h3 {
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.article img {
+    max-width: 12em;
+}
+
+.title-events {
+    font-size: 18px;
+    width: 100%;
+}
+
+.events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.newspapers {
+    max-height: 2em;
+}
+
+.articles-newspapers a {
+    text-decoration: none;
+    color: black
+}
+
+.articles-newspapers a:hover {
+    background: linear-gradient(90deg, grey, rgba(255, 0, 0, 0.301));
+    border-radius: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media screen and (min-width:1130px) {
+    .blog {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        gap: 3em;
+    }
+    .article {
+        width: 50em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .article h2 {
+        font-size: 1.5em;
+    }
+    .article h3 {
+        font-size: 1.25em;
+    }
+    .article img {
+        max-width: 100%;
+    }
+    .title-events {
+        position: relative;
+        font-size: 1.4em;
+        background-color: rgba(255, 255, 255, 0.527);
+        padding: 1em;
+    }
+    .events {
+        gap: 3em;
+        margin-bottom: 1.5em;
+    }
+}
+
+
+/*Prices Page (tarifs)*/
+
+.list-prices h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 24px;
+}
+
+.list-prices h2 {
+    font-size: 20px;
+}
+
+.list-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+.table-prices {
+    position: relative;
+    text-align: center;
+    line-height: 1.75em;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 1em;
+    border: 3px solid rgba(255, 255, 255, 0.527);
+    background-color: rgba(255, 255, 255, 0.527);
+}
+
+.title-table {
+    text-decoration: underline;
+}
+
+.ligne-category {
+    background: rgb(192, 173, 173, 0.527);
+}
+
+.ligne-table {
+    background: rgb(223, 216, 205, 0.527);
+}
+
+.main-frame-prices h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.main-frame-prices {
+    height: 98%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.footer-frame-prices {
+    height: 2%;
+}
+
+@media screen and (min-width: 1130px) {
+    .list-prices h1 {
+        font-size: 2em;
+    }
+    .list-prices h2 {
+        font-size: 1.5em;
+    }
+    .list-prices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .table-prices {
+        width: 40%;
+    }
+    .main-frame-prices {
+        height: 52em;
+    }
+}
