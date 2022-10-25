@@ -1,2 +1,5 @@
-"# musiqueencreuse" 
-Projet de site pour un professeur indépendant enseignant le violon et le piano
+"# musiqueencreuse"
+
+html, CSS (position, flexbox, background pictures and video with objetct-fit, hover, transform: scale)
+
+Project compatible (smartphone, tablet, laptop, desktop)
